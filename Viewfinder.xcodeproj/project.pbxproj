@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		18ED4BFA22C141EE009356C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4BF922C141EE009356C4 /* AppDelegate.swift */; };
-		18ED4BFC22C141EE009356C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4BFB22C141EE009356C4 /* ViewController.swift */; };
 		18ED4BFF22C141EE009356C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED4BFD22C141EE009356C4 /* Main.storyboard */; };
 		18ED4C0222C141EE009356C4 /* Viewfinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C0022C141EE009356C4 /* Viewfinder.xcdatamodeld */; };
 		18ED4C0422C141EF009356C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ED4C0322C141EF009356C4 /* Assets.xcassets */; };
 		18ED4C0722C141EF009356C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED4C0522C141EF009356C4 /* LaunchScreen.storyboard */; };
 		18ED4C1222C141EF009356C4 /* ViewfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C1122C141EF009356C4 /* ViewfinderTests.swift */; };
 		18ED4C1D22C141EF009356C4 /* ViewfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C1C22C141EF009356C4 /* ViewfinderUITests.swift */; };
+		18ED4C2D22C14C7B009356C4 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C2C22C14C7B009356C4 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		18ED4BF622C141EE009356C4 /* Viewfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viewfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ED4BF922C141EE009356C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18ED4BFB22C141EE009356C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18ED4BFE22C141EE009356C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18ED4C0122C141EE009356C4 /* Viewfinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viewfinder.xcdatamodel; sourceTree = "<group>"; };
 		18ED4C0322C141EF009356C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		18ED4C1822C141EF009356C4 /* ViewfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ED4C1C22C141EF009356C4 /* ViewfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewfinderUITests.swift; sourceTree = "<group>"; };
 		18ED4C1E22C141EF009356C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ED4C2C22C14C7B009356C4 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../../AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				18ED4BF922C141EE009356C4 /* AppDelegate.swift */,
-				18ED4BFB22C141EE009356C4 /* ViewController.swift */,
+				18ED4C0022C141EE009356C4 /* Viewfinder.xcdatamodeld */,
 				18ED4BFD22C141EE009356C4 /* Main.storyboard */,
+				18ED4C2C22C14C7B009356C4 /* AddPhotoViewController.swift */,
 				18ED4C0322C141EF009356C4 /* Assets.xcassets */,
 				18ED4C0522C141EF009356C4 /* LaunchScreen.storyboard */,
 				18ED4C0822C141EF009356C4 /* Info.plist */,
-				18ED4C0022C141EE009356C4 /* Viewfinder.xcdatamodeld */,
 			);
 			path = Viewfinder;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18ED4BFC22C141EE009356C4 /* ViewController.swift in Sources */,
 				18ED4BFA22C141EE009356C4 /* AppDelegate.swift in Sources */,
+				18ED4C2D22C14C7B009356C4 /* AddPhotoViewController.swift in Sources */,
 				18ED4C0222C141EE009356C4 /* Viewfinder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
