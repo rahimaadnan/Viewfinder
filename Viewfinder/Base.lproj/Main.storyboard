@@ -13,7 +13,7 @@
         <!--Yee Pics -->
         <scene sceneID="BtC-OG-N75">
             <objects>
-                <tableViewController id="NFV-Ly-kEK" sceneMemberID="viewController">
+                <tableViewController id="NFV-Ly-kEK" customClass="PostTableViewController" customModule="Viewfinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NGS-jF-heC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vu-hf-RYG">
-                                <rect key="frame" x="58" y="345" width="98" height="63"/>
+                                <rect key="frame" x="268" y="615" width="98" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo Libary"/>
                                 <connections>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfs-bb-CgX">
-                                <rect key="frame" x="74" y="656" width="54" height="30"/>
+                                <rect key="frame" x="58" y="648" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -78,22 +78,22 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7X-JP-XGN">
-                                <rect key="frame" x="203" y="361" width="97" height="30"/>
+                                <rect key="frame" x="150" y="364" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOB-6y-rOE">
-                                <rect key="frame" x="235" y="755" width="34" height="30"/>
+                                <rect key="frame" x="181" y="528" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="saveTapped:" destination="Vse-CH-z5F" eventType="touchUpInside" id="lh6-cS-dvu"/>
+                                    <action selector="saveTapped:" destination="Vse-CH-z5F" eventType="touchUpInside" id="0BW-aN-VmW"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-512" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-O8-egJ">
-                                <rect key="frame" x="110" y="505" width="240" height="128"/>
+                                <rect key="frame" x="96" y="188" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -102,6 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="8ef-Kl-cUf"/>
                     <connections>
+                        <outlet property="captionTexts" destination="Z7X-JP-XGN" id="xWH-vf-RQM"/>
                         <outlet property="imageView" destination="xC2-O8-egJ" id="Rql-YS-apY"/>
                     </connections>
                 </viewController>

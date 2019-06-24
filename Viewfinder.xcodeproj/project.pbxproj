@@ -15,6 +15,7 @@
 		18ED4C1222C141EF009356C4 /* ViewfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C1122C141EF009356C4 /* ViewfinderTests.swift */; };
 		18ED4C1D22C141EF009356C4 /* ViewfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C1C22C141EF009356C4 /* ViewfinderUITests.swift */; };
 		18ED4C2D22C14C7B009356C4 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C2C22C14C7B009356C4 /* AddPhotoViewController.swift */; };
+		18ED4C2F22C164D1009356C4 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED4C2E22C164D1009356C4 /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18ED4C1C22C141EF009356C4 /* ViewfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewfinderUITests.swift; sourceTree = "<group>"; };
 		18ED4C1E22C141EF009356C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18ED4C2C22C14C7B009356C4 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../../AddPhotoViewController.swift; sourceTree = "<group>"; };
+		18ED4C2E22C164D1009356C4 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		18ED4BED22C141ED009356C4 = {
 			isa = PBXGroup;
 			children = (
+				18ED4C2E22C164D1009356C4 /* PostTableViewController.swift */,
 				18ED4BF822C141EE009356C4 /* Viewfinder */,
 				18ED4C1022C141EF009356C4 /* ViewfinderTests */,
 				18ED4C1B22C141EF009356C4 /* ViewfinderUITests */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ED4BFA22C141EE009356C4 /* AppDelegate.swift in Sources */,
+				18ED4C2F22C164D1009356C4 /* PostTableViewController.swift in Sources */,
 				18ED4C2D22C14C7B009356C4 /* AddPhotoViewController.swift in Sources */,
 				18ED4C0222C141EE009356C4 /* Viewfinder.xcdatamodeld in Sources */,
 			);
