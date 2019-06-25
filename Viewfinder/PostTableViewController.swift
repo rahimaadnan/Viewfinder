@@ -42,9 +42,21 @@ class PostTableViewController: UITableViewController {
 
 
     // MARK: - Table view data source
-
-
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+            }
+        }
+    }
+    
+    /// stopped here 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return photos.count
