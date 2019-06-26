@@ -14,10 +14,19 @@ class PhotoDetailViewController: UIViewController {
     @IBOutlet weak var Photos: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
+        
+        if let realPhoto = photo {
+            title = realPhoto.captions
+            
+            if let cellPhotoImageData = realPhoto.imageData {
+                if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                    Photos.image = cellPhotoImage
+    }
         // Do any additional setup after loading the view.
     }
-    
+    }
+    }
 
     /*
     // MARK: - Navigation

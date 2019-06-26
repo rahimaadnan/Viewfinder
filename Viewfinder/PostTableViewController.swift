@@ -52,11 +52,16 @@ class PostTableViewController: UITableViewController {
         if segue.identifier == "moveToDetail" {
             
             if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                
+                if let photoToSend = sender as?
+                    Photos {
+                    photoDetailView.photo = photoToSend
+                }
             }
         }
     }
     
-    /// stopped here 
+    /// stopped here
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return photos.count
